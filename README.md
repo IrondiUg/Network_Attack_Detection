@@ -10,11 +10,11 @@ ________________________________________
 -	Review and interpret honeypot logs as evidence of malicious activity
 -	Produce a structured incident-style report
 ________________________________________
-3. Lab Environment
-3.1 Virtualization Platform
-•	Hypervisor: VMware Workstation
-3.2 Virtual Machines
-Role	Operating System	Purpose
+##  3. Lab Environment
+- 3.1 Virtualization Platform
+  - Hypervisor: VMware Workstation
+- 3.2 Virtual Machines - kali 1(attacker - 192.168.36.128) and kali 2(Cowrie Honeyot Server - 192.168.36.130)
+
 Attacker VM	Kali Linux	Performs scanning and attack simulations
 Honeypot VM	Kali Linux + Cowrie	Hosts the Cowrie SSH honeypot
 Note: Although Cowrie is commonly deployed on Ubuntu Server, Kali Linux was used successfully in this controlled lab for learning and demonstration purposes.
