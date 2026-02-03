@@ -90,29 +90,22 @@ Primary log files:
 
 ![Screenshot 2026-02-03 123105](https://github.com/user-attachments/assets/eae220d4-79b3-45f0-a4f3-ac920adf8627)
 
-  
 ### 8.2 Observed Attacker Behavior
 -	Initial reconnaissance using Nmap
 -	Attempted SSH authentication
 -	Post-login command execution such as directory listing and file access
 These behaviors align with common real-world intrusion patterns.
 ________________________________________
-9. Findings
-•	Cowrie successfully detected and logged all simulated attack activities.
-•	The honeypot convincingly emulated a vulnerable SSH server.
-•	Attackers were unable to access real system resources.
-•	Network and application-layer evidence correlated correctly.
+## 9. Findings
+-	Cowrie successfully detected and logged all simulated attack activities.
+-	The honeypot convincingly emulated a vulnerable SSH server.
+-	Attackers were unable to access real system resources.
+-	Network and application-layer evidence correlated correctly.
 ________________________________________
-10. Conclusion
+## 10. Conclusion
 This project demonstrated the effectiveness of honeypots in detecting and analyzing unauthorized network activity. Cowrie provided valuable insight into attacker techniques without placing real systems at risk. The combination of honeypot logs and network traffic capture offers a strong foundation for incident investigation and security monitoring.
 ________________________________________
-11. Future Improvements
-•	Deploy Cowrie on a dedicated Ubuntu Server VM
-•	Integrate log forwarding to a SIEM platform
-•	Add alerting for repeated or high-risk behavior
-•	Expand the honeypot to include HTTP or FTP services
-________________________________________
-12. Disclaimer
+## 11. Disclaimer
 All activities were performed in a controlled lab environment for educational purposes only. No real systems or external networks were targeted during this exercise.
 
 
