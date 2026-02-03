@@ -47,17 +47,16 @@ The fake filesystem presented to attackers was customized to increase realism:
 •	Fake sensitive files (e.g., password lists, backup files)
 All modifications were made strictly within Cowrie’s simulated filesystem to avoid exposing the real host.
 ________________________________________
-6. Attack Simulation
-6.1 Network Reconnaissance (Nmap)
+## 6. Attack Simulation
+### 6.1 Network Reconnaissance (Nmap)
 From the attacker VM, Nmap was used to perform reconnaissance against the Cowrie honeypot in order to identify open ports and exposed services.
 The scan revealed an open SSH service on the target system, confirming that the honeypot was reachable and actively listening for connections.
 Typical scan types included:
 •	Basic TCP scan to identify open ports
 •	Service version detection to enumerate SSH details
 The discovery of the open SSH port informed the next phase of the attack, which involved direct SSH connection attempts to the honeypot.
-Expected outcome:
-•	Detection of an open SSH service
-•	Spoofed service and OS information returned by Cowrie
+![Screenshot 2026-02-03 110743](https://github.com/user-attachments/assets/c73c8e98-3471-400c-a838-b97da4aa7846)
+
 6.2 SSH Login Attempts and Access Simulation
 After identifying the open SSH port using Nmap, the attacker VM initiated an SSH connection to the Cowrie honeypot using the discovered IP address.
 Multiple login attempts were performed using common usernames and passwords. Cowrie accepted the credentials and provided a simulated shell environment, creating the appearance that the attacker machine had successfully gained access to the server.
