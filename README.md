@@ -13,14 +13,14 @@ ________________________________________
 ##  3. Lab Environment
 - ### 3.1 Virtualization Platform
   - Hypervisor: VMware Workstation
-- 3.2 Virtual Machines
+- ### 3.2 Virtual Machines
   -  kali 1 (attacker - 192.168.36.128)
   -  kali 2 (Cowrie Honeyot Server - 192.168.36.130)
 
 Attacker VM	Kali Linux	Performs scanning and attack simulations
 Honeypot VM	Kali Linux + Cowrie	Hosts the Cowrie SSH honeypot
 
-3.3 Network Configuration
+### 3.3 Network Configuration
 -	Network Mode:NAT (isolated virtual network)
 -	This ensured both VMs could communicate with each other while remaining isolated from external networks.
 ________________________________________
