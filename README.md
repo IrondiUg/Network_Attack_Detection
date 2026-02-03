@@ -3,13 +3,12 @@
 This project documents the deployment and use of a Cowrie Honeypot to detect, observe, and log simulated network attacks within a controlled virtual lab environment. The objective was to understand attacker reconnaissance techniques, credential abuse, and post-authentication behavior while ensuring that no real system resources were exposed or compromised.
 The exercise was carried out as part of an internship assignment focused on practical network security monitoring and incident reporting.
 ________________________________________
----
-2. Objectives
-•	Deploy a functional honeypot environment for attack detection
-•	Simulate network reconnaissance and unauthorized access attempts
-•	Capture and analyze network traffic generated during attacks
-•	Review and interpret honeypot logs as evidence of malicious activity
-•	Produce a structured incident-style report
+## 2. Objectives
+-	Deploy a functional honeypot environment for attack detection
+-	Simulate network reconnaissance and unauthorized access attempts
+-	Capture and analyze network traffic generated during attacks
+-	Review and interpret honeypot logs as evidence of malicious activity
+-	Produce a structured incident-style report
 ________________________________________
 3. Lab Environment
 3.1 Virtualization Platform
