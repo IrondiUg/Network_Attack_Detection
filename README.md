@@ -74,25 +74,27 @@ While Nmap scans and SSH connections were performed, Wireshark captured:
 -	Evidence of successful connection establishment from the attacker VM
 The packet capture confirmed that network-level communication occurred prior to and during the simulated compromise, demonstrating how attackers gain access following service discovery.
 
-![Screenshot 2026-02-03 113156](https://github.com/user-attachments/assets/57ba49b7-2470-4747-be95-c90e17496f75)
-
 ![Screenshot 2026-02-03 113646](https://github.com/user-attachments/assets/9c65d7a3-0145-4cbd-9697-42285a348fd9)
 
 The captured traffic served as supporting evidence alongside Cowrie logs, providing visibility at both the network and application layers.
 ________________________________________
-8. Log Analysis & Evidence
-8.1 Cowrie Logs
+## 8. Log Analysis & Evidence
+### 8.1 Cowrie Logs
 Cowrie generated detailed logs containing:
-•	Source IP addresses
-•	Usernames and passwords attempted
-•	Timestamps of activity
-•	Commands entered by the attacker
+-	Source IP addresses
+-	Usernames and passwords attempted
+-	Timestamps of activity
+-	Commands entered by the attacker
 Primary log files:
-•	cowrie.log
-8.2 Observed Attacker Behavior
-•	Initial reconnaissance using Nmap
-•	Attempted SSH authentication
-•	Post-login command execution such as directory listing and file access
+-	cowrie.log
+
+![Screenshot 2026-02-03 123105](https://github.com/user-attachments/assets/eae220d4-79b3-45f0-a4f3-ac920adf8627)
+
+  
+### 8.2 Observed Attacker Behavior
+-	Initial reconnaissance using Nmap
+-	Attempted SSH authentication
+-	Post-login command execution such as directory listing and file access
 These behaviors align with common real-world intrusion patterns.
 ________________________________________
 9. Findings
