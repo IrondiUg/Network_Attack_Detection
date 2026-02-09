@@ -26,8 +26,6 @@ Key features used in this project:
 -	Credential capture
 -	Command logging
 -	Simulated filesystem
-
-Follow the steps in this video to set up Cowrie honeypot 👉🏾 https://youtu.be/-ufsdzLr5Oc?si=BbEQvEAqsc9KqL3U
 ________________________________________
 ## 5. Installation & Configuration Summary
 ### 5.1 Cowrie Deployment
@@ -35,9 +33,12 @@ ________________________________________
 -	A Python virtual environment was used to isolate dependencies.
 -	Required Python packages were installed using pip.
 -	Cowrie services were started using the built-in launcher.
+Follow the steps in this video to set up Cowrie honeypot 👉🏾 https://youtu.be/-ufsdzLr5Oc?si=BbEQvEAqsc9KqL3U
+
 ### 5.2 SSH Configuration
 -	Cowrie was configured to emulate an SSH server on port 2222. A realistic SSH banner was used to mimic a vulnerable OpenSSH version.
 -	Root and other common usernames were accepted to simulate misconfiguration.
+
 ### 5.3 Filesystem Customization
 The fake filesystem presented to attackers was customized to increase realism:
 -	Simulated directories such as /root, /etc, and /var
