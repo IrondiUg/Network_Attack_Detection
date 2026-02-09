@@ -26,6 +26,8 @@ Key features used in this project:
 -	Credential capture
 -	Command logging
 -	Simulated filesystem
+
+Follow the steps in this video to set up Cowrie honeypot 👉🏾 https://youtu.be/-ufsdzLr5Oc?si=BbEQvEAqsc9KqL3U
 ________________________________________
 ## 5. Installation & Configuration Summary
 ### 5.1 Cowrie Deployment
