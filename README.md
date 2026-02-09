@@ -107,6 +107,3 @@ ________________________________________
 ## 11. Disclaimer
 All activities were performed in a controlled lab environment for educational purposes only. No real systems or external networks were targeted during this exercise.
 ---
-## 👤 Author
-**Ugochukwu Irondi**  
-Cybersecurity / Network Engineering
