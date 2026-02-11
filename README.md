@@ -13,8 +13,8 @@ ________________________________________
 ### 3.1 Virtualization Platform
   - Hypervisor: VMware Workstation
 ### 3.2 Virtual Machines
-  -  kali 1 (attacker - 192.168.36.128)
-  -  kali 2 (Cowrie Honeypot Server - 192.168.36.130)
+  -  kali 1 (attacker - `192.168.36.128`)
+  -  kali 2 (Cowrie Honeypot Server - `192.168.36.130`)
 
 Attacker VM	Kali Linux	Performs scanning and attack simulations
 Honeypot VM	Kali Linux + Cowrie	Hosts the Cowrie SSH honeypot
@@ -37,12 +37,12 @@ ________________________________________
 Follow the steps in this video to set up Cowrie honeypot 👉🏾 https://youtu.be/-ufsdzLr5Oc?si=BbEQvEAqsc9KqL3U
 
 ### 5.2 SSH Configuration
--	Cowrie was configured to emulate an SSH server on port 2222. A realistic SSH banner was used to mimic a vulnerable OpenSSH version.
+-	Cowrie was configured to emulate an SSH server on `port 2222`. A realistic SSH banner was used to mimic a vulnerable OpenSSH version.
 -	Root and other common usernames were accepted to simulate misconfiguration.
 
 ### 5.3 Filesystem Customization
 The fake filesystem presented to attackers was customized to increase realism:
--	Simulated directories such as /root, /etc, and /var
+-	Simulated directories such as `/root`, `/etc`, and `/var`
 -	Fake sensitive files (e.g., password lists, backup files)
 All modifications were made strictly within Cowrie’s simulated filesystem to avoid exposing the real host.
 ________________________________________
