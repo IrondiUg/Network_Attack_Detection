@@ -80,12 +80,12 @@ ________________________________________
 ## 8. Log Analysis & Evidence
 ### 8.1 Cowrie Logs
 Cowrie generated detailed logs containing:
--	Source IP addresses
--	Usernames and passwords attempted
--	Timestamps of activity
--	Commands entered by the attacker
+-	`Source IP addresses`
+-	`Usernames and passwords attempted`
+-	`Timestamps of activity`
+-	`Commands entered by the attacker`
 Primary log files:
--	cowrie.log
+-	`cowrie.log`
 
 ![Screenshot 2026-02-03 123105](https://github.com/user-attachments/assets/eae220d4-79b3-45f0-a4f3-ac920adf8627)
 
