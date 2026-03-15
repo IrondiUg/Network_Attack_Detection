@@ -160,16 +160,3 @@ The logged sessions revealed real-world attack progression: reconnaissance → a
 ________________________________________
 ## ⚠️ Disclaimer
 All activities documented in this project were performed **strictly in a controlled laboratory environment** for **educational and research purposes only**.
-
-## Quick Start Checklist
-
-- [ ] VMware Workstation installed and configured
-- [ ] Two Kali Linux VMs created with networking configured
-- [ ] Cowrie cloned and Python virtual environment created
-- [ ] Cowrie configured with SSH on port 2222
-- [ ] Honeypot service started and verified listening
-- [ ] Wireshark installed and packet capture started
-- [ ] Nmap scans executed from attacker VM
-- [ ] SSH access simulated with credential attempts
-- [ ] Log files collected and analyzed
-- [ ] Incident report documentation completed
