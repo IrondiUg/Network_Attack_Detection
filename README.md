@@ -148,6 +148,9 @@ ________________________________________
 ________________________________________
 ## 10. Conclusion
 This project demonstrated the effectiveness of honeypots in detecting and analyzing unauthorized network activity. Cowrie provided valuable insight into attacker techniques without placing real systems at risk. The combination of honeypot logs and network traffic capture offers a strong foundation for incident investigation and security monitoring.
+
+The logged sessions revealed real-world attack progression: reconnaissance → authentication → exploration → persistence attempts. This pattern matches documented TTPs (Tactics, Techniques, and Procedures) from threat intelligence reports.
+
 ________________________________________
 ## ⚠️ Disclaimer
 All activities were performed in a controlled lab environment for educational purposes only. No real systems or external networks were targeted during this exercise.
