@@ -151,6 +151,12 @@ This project demonstrated the effectiveness of honeypots in detecting and analyz
 
 The logged sessions revealed real-world attack progression: reconnaissance → authentication → exploration → persistence attempts. This pattern matches documented TTPs (Tactics, Techniques, and Procedures) from threat intelligence reports.
 
+## Security Lessons Learned
+- **Defense in Depth:** Honeypots complement but don't replace firewalls, IDS, and endpoint protection
+- **Monitoring is Critical:** Detection requires continuous log analysis and alerting
+- **Evidence Preservation:** Forensic integrity requires proper log management and retention policies
+- **Education Value:** Hands-on honeypot operation provides practical security training
+
 ________________________________________
 ## ⚠️ Disclaimer
 All activities were performed in a controlled lab environment for educational purposes only. No real systems or external networks were targeted during this exercise.
