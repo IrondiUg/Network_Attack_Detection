@@ -66,7 +66,7 @@ ________________________________________
 
 ________________________________________
 ## 4. Cowrie Honeypot Overview
-Cowrie is a medium-interaction SSH honeypot designed to emulate a vulnerable Linux system. It accepts all usernames and passwords by design, allowing attackers to proceed into a simulated shell environment. All interactions are logged for analysis.
+Cowrie is a **medium-interaction SSH honeypot** designed to emulate a vulnerable Linux system. It accepts all usernames and passwords by design, allowing attackers to proceed into a simulated shell environment. All interactions are logged for analysis.
 Key features used in this project:
 -	Fake SSH service emulation
 -	Credential capture
