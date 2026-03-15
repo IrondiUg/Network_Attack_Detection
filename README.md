@@ -159,4 +159,4 @@ The logged sessions revealed real-world attack progression: reconnaissance → a
 
 ________________________________________
 ## ⚠️ Disclaimer
-All activities were performed in a controlled lab environment for educational purposes only. No real systems or external networks were targeted during this exercise.
+All activities documented in this project were performed **strictly in a controlled laboratory environment** for **educational and research purposes only**.
