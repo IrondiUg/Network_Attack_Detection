@@ -10,14 +10,60 @@ ________________________________________
 -	Produce a structured incident report
 ________________________________________
 ##  3. Lab Environment
-### 3.1 Virtualization Platform
-  - Hypervisor: VMware Workstation
-### 3.2 Virtual Machines
-  -  kali 1 (attacker - `192.168.36.128`)
-  -  kali 2 (Cowrie Honeypot Server - `192.168.36.130`)
+### Virtualization Infrastructure
 
-Attacker VM	Kali Linux	Performs scanning and attack simulations
-Honeypot VM	Kali Linux + Cowrie	Hosts the Cowrie SSH honeypot
+| Component | Specification |
+|-----------|---------------|
+| **Hypervisor** | VMware Workstation |
+| **Host OS** | Windows/Linux with adequate virtualization support |
+| **Memory Allocation** | Minimum 8GB RAM (4GB per VM) |
+| **Network Mode** | VMware bridged or custom virtual network |
+| **Isolation Level** | Complete lab separation from production networks |
+
+### Virtual Machines Deployed
+
+#### 1. **Attacker Machine (Kali VM 1)**
+- **IP Address:** `192.168.36.128`
+- **Operating System:** Kali Linux (latest)
+- **Role:** Simulates an external threat actor
+- **Tools Installed:** Nmap, SSH client, Wireshark, terminal emulators
+- **Responsibilities:** 
+  - Conduct network reconnaissance
+  - Attempt SSH authentication
+  - Execute post-compromise commands
+  - Generate realistic attack traffic
+
+#### 2. **Honeypot Server (Kali VM 2)**
+- **IP Address:** `192.168.36.130`
+- **Operating System:** Kali Linux + Cowrie SSH Honeypot
+- **Role:** Emulates a vulnerable target system
+- **Listening Port:** `2222` (SSH)
+- **Responsibilities:**
+  - Accept and log all connection attempts
+  - Simulate successful login sessions
+  - Provide realistic shell environment
+  - Generate comprehensive audit logs
+
+### Network Topology
+
+```
+┌─────────────────────┐
+│  Attacker Machine   │
+│  Kali 1             │
+│  192.168.36.128     │
+└──────────┬──────────┘
+           │
+           │ SSH Connection & Nmap Scans
+           │ (Monitored by Wireshark)
+           │
+┌──────────▼──────────┐
+│  Honeypot Server    │
+│  Kali 2             │
+│  192.168.36.130     │
+│  Cowrie on :2222    │
+└─────────────────────┘
+```
+
 ________________________________________
 ## 4. Cowrie Honeypot Overview
 Cowrie is a medium-interaction SSH honeypot designed to emulate a vulnerable Linux system. It accepts all usernames and passwords by design, allowing attackers to proceed into a simulated shell environment. All interactions are logged for analysis.
